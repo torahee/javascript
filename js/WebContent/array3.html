@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+document.write("<img src=https://i1.sndcdn.com/avatars-000751960345-ath81o-t500x500.jpg width='300px' height='100%' >");
+
+function f(){
+return "안녕하세요";
+}
+
+let arr =[1,2,3,"자바스크립트",f(), new Date(), null, true];
+
+document.write("<br>"+arr[5]+"<br>");
+
+document.write("오늘은 "+arr[5].getFullYear()+"년"+(arr[5].getMonth()+1)+"월 "
++ arr[5].getDate()+"일 입니다.");
+
+</script>
+</head>
+<body>
+
+</body>
+</html>

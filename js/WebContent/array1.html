@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Array1</title>
+<style type="text/css">
+
+table{
+ width: 300px; height: 300px;
+ background-color: lightgray;
+ text-align: center;
+ border-collapse: collapse;
+ font-size: 12px;
+}
+
+#h {background-color:#DB7093; color: white;}
+caption{
+ font-size: 18px;
+}
+</style>
+
+<script type="text/javascript">
+
+let s = [ ]
+
+let student1 = new Array(
+	 ['서대길', '컴공', 88, 76], 
+	 ['김건부','수학',70,83],
+	 ['허수','행정',92,95],
+	 ['장하권','물리',85,92],
+	 ['노태윤','건축',97,88]
+	);
+
+document.write( student1[0][0] );
+
+let student2 =  new Array(   
+	new Array( '서대길', '컴공', 88, 76 ), 
+	new Array( '김건부','수학',70,83 ),  
+	new Array( '허수','행정',92,95 ), 
+	new Array( '장하권','물리',85,92 ),
+	new Array( '노태윤','건축',97,88 ) 
+);
+
+document.write("<table border='1'>");
+document.write("<caption>성적테이블</caption>");
+
+document.write("<tr id='h'><td>이름</td><td>전공</td><td>중간</td><td>기말</td></tr>");
+
+  for( i=0; i<student1.length; i++ ){  
+document.write("<tr>");
+
+for( j=0; j<student1[i].length; j++ ){
+
+
+document.write("<td>"+student1[ i ][ j ]+"</td>")
+}
+document.write("</tr>");
+}
+
+document.write("</table>");
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
