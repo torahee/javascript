@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+// Calculator(num1,num2) 생성자 함수를 정의하여
+// add, sub, mul, div 메소드를 구현하여 호출하기
+
+/* 
+function gugudan(dan){   // 함수
+for(i=1; i<=dan; i++){
+document.write(dan*i+'<br>');
+}
+return ;
+}
+*/
+
+function Gugudan(dan){   // 생성자 함수
+// 속성
+this.dan = dan;
+
+// 메소드(함수)
+this.guguDanPrint = function(){
+for( i=1; i<=this.dan; i++ ){
+document.write("<h4>" + dan + " * " + i +"="+(dan*i)+"</h4>");
+  }
+ }
+}
+
+// 활용
+// 1.객체를 생성한다.
+let dan = parseInt(prompt("단을 입력해주세요ㅇㅅㅇ"));
+let gugu = new Gugudan(dan);
+gugu.guguDanPrint();
+
+
+</script>
+</head>
+<body>
+
+</body>
+</html>
